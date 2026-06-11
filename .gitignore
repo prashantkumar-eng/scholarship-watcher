@@ -1,0 +1,5 @@
+# NEVER upload the password file to GitHub
+.env
+
+__pycache__/
+*.pyc

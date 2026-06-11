@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python watcher.py --site \"NSP Deep\" --no-delay)"
+    ]
+  }
+}
