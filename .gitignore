@@ -1,5 +1,8 @@
 # NEVER upload the password file to GitHub
 .env
 
+# local scheduled-task output log (machine-specific noise)
+task_runs.log
+
 __pycache__/
 *.pyc
