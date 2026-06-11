@@ -1,12 +1,12 @@
 name: Website Watcher
 
 on:
+  workflow_dispatch: {}   # lets you run it manually from the Actions tab
   schedule:
-    # Scrape every 3 hours (UTC). GitHub may delay by a few minutes — normal.
+    # Scrape every 3 hours (UTC). GitHub may delay by a few minutes - normal.
     - cron: "0 */3 * * *"
     # Daily digest email at 13:30 UTC = 19:00 IST (7 PM India time)
     - cron: "30 13 * * *"
-  workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
   contents: write   # needed to commit the updated state/ snapshots back
