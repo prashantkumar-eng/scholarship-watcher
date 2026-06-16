@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-06-16T03:56:51.504472+00:00",
- "hash": "7f3fd7fb02f3cecdd8ab101962c953a8b89741081fc9a61a3395da7126409573",
+ "checked_at": "2026-06-16T11:19:03.561909+00:00",
+ "hash": "5db55ab82d391bebcad3f090205c35ca7b60b4f33170be3df2804fad7133c29f",
  "lines": [
   "Registered Institutes",
   "Scholarship Result",
@@ -17,7 +17,9 @@
   "Closed Schemes",
   "Career Test",
   "-- Select Company --",
+  "RBL BANK LIMITED",
   "-- Select Course Level --",
+  "Under Graduate",
   "EdCIL India Limited",
   "eClerx Services Limited",
   "Wagh Bakri Foundation",
@@ -85,7 +87,6 @@
   "Arvind Fashions Limited",
   "HAND IN HAND INDIA",
   "Petronet LNG Ltd",
-  "RBL Bank Limited",
   "Odisha Power Generation Corporation Ltd",
   "Jindal India Power Limited",
   "Lowes India Limited",
