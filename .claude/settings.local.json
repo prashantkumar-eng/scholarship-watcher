@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(python watcher.py --site \"NSP Deep\" --no-delay)"
+      "PowerShell(python watcher.py --site \"NSP Deep\" --no-delay)",
+      "Bash(gh run *)",
+      "Bash(python -c ' *)"
     ]
   }
 }
