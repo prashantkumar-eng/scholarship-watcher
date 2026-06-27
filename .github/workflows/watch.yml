@@ -1,15 +1,20 @@
 name: Website Watcher
 
 on:
-  workflow_dispatch: {}   # lets you run it manually from the Actions tab
+  workflow_dispatch: {}   # run manually from the Actions tab any time
   schedule:
-    # Scrape every 3 hours (UTC). GitHub may delay by a few minutes - normal.
+    # Scrape every 3 hours (UTC). GitHub may delay a few minutes — normal.
     - cron: "0 */3 * * *"
-    # Daily digest email at 13:30 UTC = 19:00 IST (7 PM India time)
+    # Daily digest at 13:30 UTC = 19:00 IST (7 PM India time)
     - cron: "30 13 * * *"
 
 permissions:
-  contents: write   # needed to commit the updated state/ snapshots back
+  contents: write   # needed to commit updated state/ snapshots
+
+env:
+  # Opt into Node.js 24 now — avoids the deprecation warning and prepares
+  # for the mandatory switch on 16 Sep 2026.
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   watch:
@@ -26,28 +31,33 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
-      - name: Run watcher (scrape and save findings)
+      - name: Run watcher (scrape + save findings)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_ADDRESS:      ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_TO:           ${{ secrets.EMAIL_TO }}
+        # watcher.py exits 0 even when sites fail (geo-blocking is expected from
+        # US servers). The run only goes red if the Python process crashes.
         run: python watcher.py
 
-      - name: Send 7 PM digest email (only on the daily 13:30 UTC schedule)
+      - name: Send 7 PM digest (daily 13:30 UTC schedule only)
         if: github.event.schedule == '30 13 * * *'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_ADDRESS:      ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python watcher.py --send-digest
+          EMAIL_TO:           ${{ secrets.EMAIL_TO }}
+        # Use || true so a failed email send (e.g. bad secret, SMTP blip) does
+        # NOT mark the entire GitHub run red. findings stay in pending_alerts.json
+        # and will be retried on the next digest run automatically.
+        run: python watcher.py --send-digest || true
 
       - name: Commit updated snapshots
         run: |
-          git config user.name "watcher-bot"
+          git config user.name  "watcher-bot"
           git config user.email "actions@github.com"
           git add -A
           git diff --cached --quiet || git commit -m "Update snapshots [skip ci]"

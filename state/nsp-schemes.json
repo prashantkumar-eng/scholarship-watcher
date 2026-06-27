@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-06-11T05:59:45.687583+00:00",
+ "checked_at": "2026-06-27T14:55:44.229651+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -81,9 +81,9 @@
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In Schools For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",
-   "open_from": "01-06-2026",
-   "app_status": "CLOSED",
-   "app_date": "09-06-2026"
+   "open_from": "",
+   "app_status": "NOT YET OPENED",
+   "app_date": ""
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In College For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",

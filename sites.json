@@ -8,6 +8,7 @@
       "stipend", "apply", "application", "last date", "deadline", "extended",
       "scheme", "registration", "live", "open",
       "renewal", "fresh", "amount", "stipend", "eligibility", "notification",
+      "circular", "advertisement", "advt",
       "छात्रवृत्ति", "इंटर्नशिप", "आवेदन", "अंतिम तिथि", "योजना"
     ]
   },
@@ -24,48 +25,59 @@
     {
       "name": "UP Scholarship Portal",
       "url": "https://scholarship.up.gov.in/",
-      "legacy_ssl": true
+      "legacy_ssl": true,
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news], [class*=news]"
     },
     {
       "name": "Bihar PMS Online (Post-Matric)",
-      "url": "https://pmsonline.bihar.gov.in/"
+      "url": "https://pmsonline.bihar.gov.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news]"
     },
     {
       "name": "Bihar Medhasoft",
-      "url": "https://medhasoft.bihar.gov.in/"
+      "url": "https://medhasoft.bihar.gov.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=update], [class*=update]"
     },
     {
       "name": "Maharashtra MahaDBT",
-      "url": "https://mahadbt.maharashtra.gov.in/"
+      "url": "https://mahadbt.maharashtra.gov.in/",
+      "selector": "[id*=notice], [class*=notice], [id*=news], [class*=news], marquee"
     },
     {
       "name": "Karnataka SSP (Post-Matric)",
-      "url": "https://ssp.postmatric.karnataka.gov.in/"
+      "url": "https://ssp.postmatric.karnataka.gov.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news]"
     },
     {
       "name": "WB Oasis (SC/ST/OBC Scholarships)",
-      "url": "https://oasis.gov.in/"
+      "url": "https://oasis.gov.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news], [class*=news]"
     },
     {
       "name": "Rajasthan SJE Scholarship",
-      "url": "https://sje.rajasthan.gov.in/"
+      "url": "https://sje.rajasthan.gov.in/",
+      "selector": "[id*=notice], [class*=notice], [id*=news], [class*=news], marquee, [id*=update]"
     },
     {
       "name": "Haryana Scholarship (Higher Edu)",
-      "url": "https://harchhatravratti.highereduhry.ac.in/"
+      "url": "https://harchhatravratti.highereduhry.ac.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news]"
     },
     {
       "name": "Digital Gujarat Scholarships",
       "url": "https://www.digitalgujarat.gov.in/",
-      "verify_ssl": false
+      "verify_ssl": false,
+      "selector": "[id*=notice], [class*=notice], [id*=news], marquee"
     },
     {
       "name": "Jharkhand eKalyan",
-      "url": "https://ekalyan.cgg.gov.in/"
+      "url": "https://ekalyan.cgg.gov.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news], [id*=update]"
     },
     {
       "name": "Telangana ePASS",
-      "url": "https://telanganaepass.cgg.gov.in/"
+      "url": "https://telanganaepass.cgg.gov.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news]"
     },
     {
       "name": "AP Jnanabhumi",
@@ -93,11 +105,13 @@
     },
     {
       "name": "AICTE - Student Development Schemes",
-      "url": "https://www.aicte-india.org/schemes/students-development-schemes"
+      "url": "https://www.aicte-india.org/schemes/students-development-schemes",
+      "selector": ".scheme-list, .scheme-card, [class*=scheme], [id*=scheme], table"
     },
     {
       "name": "UGC - Scholarships & Fellowships",
-      "url": "https://www.ugc.gov.in/studentfeature/Scholarship-fellowship"
+      "url": "https://www.ugc.gov.in/studentfeature/Scholarship-fellowship",
+      "renderer": "browser"
     },
     {
       "name": "Ministry of Minority Affairs - Schemes",
@@ -106,12 +120,14 @@
     {
       "name": "DST INSPIRE Scholarship",
       "url": "https://online-inspire.gov.in/",
-      "verify_ssl": false
+      "verify_ssl": false,
+      "selector": "[id*=notice], [class*=notice], [id*=news], marquee, [id*=update]"
     },
     {
       "name": "NTA - National Testing Agency",
       "url": "https://www.nta.ac.in/",
-      "verify_ssl": false
+      "verify_ssl": false,
+      "selector": "[id*=notice], [class*=notice], [id*=news], marquee, .latest, #latest"
     },
     {
       "name": "Vidyasaarathi Scholarships",
@@ -123,7 +139,8 @@
     },
     {
       "name": "ICMR - Indian Council of Medical Research",
-      "url": "https://www.icmr.gov.in/"
+      "url": "https://www.icmr.gov.in/",
+      "selector": "[id*=notice], [class*=notice], [id*=news], [class*=news], marquee, [id*=update], [class*=latest]"
     },
     {
       "name": "RBI Opportunities",
@@ -131,7 +148,8 @@
     },
     {
       "name": "CSIR HRDG - Fellowships",
-      "url": "https://csirhrdg.res.in/"
+      "url": "https://csirhrdg.res.in/",
+      "selector": "[id*=notice], [class*=notice], marquee, [id*=news], [id*=update]"
     },
     {
       "name": "Drishti IAS - Internship/Career (example private site)",

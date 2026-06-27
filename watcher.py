@@ -117,19 +117,45 @@ EXCLUSION_RULES = [
 LIVE_EVENT_RULES = [
     ("🟢", "Application window OPEN", re.compile(
         r"\bis live\b|\bnow live\b|\blive now\b|\bopen(ed)? for application"
-        r"|\bapplications? (are )?(open|invited|started)\b|\bapply (now|online)\b"
-        r"|\bregistrations? (open|started|begins?)\b|\bopen till\b", re.I)),
+        r"|\bapplications? (are )?(open|invited|started|accepted)\b"
+        r"|\bapply (now|online)\b"
+        r"|\bregistrations? (open|started|begins?|starts?)\b"
+        r"|\bregistration (starts?|begins?|open) (from|on)\b"
+        r"|\bopen till\b|\bopen from\b"
+        r"|\bapplication(s)? (window|portal|form|link) (is |are )?(now )?open"
+        r"|\binvit(ed|ing) applications?\b|\bonline applications? (are )?invited\b"
+        r"|\bapplications? (are )?accepted\b|\bapply (at|through|via)\b"
+        r"|\bportal (is |are |now |is now )?(open|live)\b|\bfresh application\b|\brenewal application\b"
+        # Hindi
+        r"|आवेदन (आमंत्रित|शुरू|खुले|खुला)|पंजीकरण (खुला|शुरू)|अभी आवेदन करें", re.I)),
     ("🆕", "New scheme announced", re.compile(
         r"\b(scholarship|fellowship|internship|scheme)s?\b.*\b20(2[6-9]|[3-9]\d)\b"
         r"|\bnew (scholarship|scheme|internship|fellowship)\b"
-        r"|\blaunch(ed|ing)?\b|\bannounc(ed|ing|ement)\b|\bintroduc(ed|ing)\b", re.I)),
+        r"|\blaunch(ed|ing)?\b|\bannounc(ed|ing|ement)\b|\bintroduc(ed|ing)\b"
+        r"|\bfor (the year|academic year|session) 20(2[6-9]|[3-9]\d)\b"
+        r"|\bnotification (for|of|regarding)\b.*\b(scholarship|fellowship|internship)\b"
+        r"|\bcircular\b.*\b(scholarship|fellowship|scheme|portal|open)\b"
+        r"|\b(scholarship|fellowship|scheme|portal)\b.*\bcircular\b"
+        r"|\badvt\.?\b|\badvertisement\b"
+        # Hindi
+        r"|नई (योजना|छात्रवृत्ति)|छात्रवृत्ति (शुरू|घोषित|लॉन्च)|(योजना|छात्रवृत्ति) 20(2[6-9]|[3-9]\d)", re.I)),
     ("📅", "Deadline / last date", re.compile(
         r"\blast date\b|\bdeadline\b|\bextend(ed)?\b|\bclosing date\b"
-        r"|\bcloses? on\b|\bapply by\b|अंतिम तिथि", re.I)),
+        r"|\bcloses? on\b|\bapply by\b"
+        r"|\bapply (by|before)\b|\bsubmit (by|before|on or before)\b|\bdue (by|date)\b"
+        r"|\blast date (of|for) (submission|application|registration)\b"
+        r"|\bopen (till|until|upto|up to)\b|\bopen from .* to \b"
+        r"|\bdate of (application|submission|registration)\b"
+        # Hindi
+        r"|अंतिम तिथि|अंतिम (तिथि|दिनांक)|तिथि (बढ़ाई|विस्तार)", re.I)),
     ("⚙️", "Rule / stipend change", re.compile(
         r"\bstipend\b|\beligibilit(y|ies)\b|\bOTR\b|\bone[- ]time registration\b"
         r"|\bmandatory\b|\bamount (increased|revised|enhanced)\b"
-        r"|\brevised (guidelines|amount|rate)\b", re.I)),
+        r"|\brevised (guidelines|amount|rate)\b|\bincome (limit|ceiling)\b"
+        r"|\b₹\s*[\d,]+\b.*\b(scholar|stipend|fellow|month|year|annum)\b"
+        r"|\b(scholar|stipend|fellow)\b.*\b₹\s*[\d,]+\b"
+        # Hindi
+        r"|छात्रवृत्ति (राशि|नियम|पात्रता)|अनिवार्य|पात्रता (मानदंड|शर्त)", re.I)),
 ]
 
 
@@ -234,18 +260,41 @@ def shutdown_browser() -> None:
         _PLAYWRIGHT = None
 
 
-def extract_lines(html: str, base_url: str = "") -> tuple[list[str], dict[str, str]]:
+# CSS selectors for notice/announcement sections common on .gov.in sites.
+# When any of these exist on the page, we read ONLY those sections — they
+# contain real announcements (scholarship openings, deadlines, circulars)
+# instead of navigation menus and department headings.
+_NOTICE_SELECTORS = [
+    # explicit id/class labels used across Indian government portals
+    "[id*=notice]", "[class*=notice]",
+    "[id*=announcement]", "[class*=announcement]",
+    "[id*=news]", "[class*=latestnews]", "[class*=latest-news]",
+    "[id*=update]", "[class*=update]",
+    "[id*=notification]", "[class*=notification]",
+    "[id*=marquee]", "marquee",          # scrolling tickers on old .gov.in sites
+    "[id*=highlight]", "[class*=highlight]",
+    "[id*=circular]", "[class*=circular]",
+    # common generic patterns
+    ".notice-board", "#noticeBoard", ".scrollnews", ".scroll-news",
+    ".what-new", ".whats-new", "#whats-new",
+]
+
+
+def extract_lines(html: str, base_url: str = "",
+                  selector: str | None = None) -> tuple[list[str], dict[str, str]]:
     """Turn a page into clean text lines, plus a map of line -> link.
 
-    The link map remembers which URL each clickable text pointed to, so an
-    alert can show "Scholarship name" together with its direct link."""
+    If the page has notice/announcement sections (or a site-specific selector
+    is given), only those sections are read — this avoids scraping navigation
+    menus and department headers that generate noise but never real alerts."""
     from urllib.parse import urljoin
 
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(STRIP_TAGS):
         tag.decompose()
 
-    # Remember the destination of every clickable text on the page
+    # Remember the destination of every clickable text on the page (full page,
+    # before we narrow the text scope, so links still resolve correctly).
     links: dict[str, str] = {}
     for a in soup.find_all("a", href=True):
         text = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
@@ -253,9 +302,35 @@ def extract_lines(html: str, base_url: str = "") -> tuple[list[str], dict[str, s
         if len(text) >= 4 and href and not href.lower().startswith("javascript"):
             links.setdefault(text.lower(), urljoin(base_url, href))
 
+    # Narrow to announcement sections if possible.
+    scope = None
+    if selector:
+        scope = soup.select(selector) or None
+    if scope is None:
+        for sel in _NOTICE_SELECTORS:
+            found = soup.select(sel)
+            if found:
+                scope = found
+                break
+
+    text_source = soup  # default: full page
+    if scope:
+        from bs4 import BeautifulSoup as BS
+        combined = BS("".join(str(t) for t in scope), "html.parser")
+        # Only use the scoped section if it has enough substance — a tiny hit
+        # (e.g. a chatbot widget that happens to have "notice" in its class)
+        # should fall back to the full page rather than produce 1-2 junk lines.
+        candidate_lines = [
+            re.sub(r"\s+", " ", l).strip()
+            for l in combined.get_text("\n").splitlines()
+            if len(re.sub(r"\s+", " ", l).strip()) >= 10
+        ]
+        if len(candidate_lines) >= 5:
+            text_source = combined
+
     lines = []
     seen = set()
-    for raw in soup.get_text("\n").splitlines():
+    for raw in text_source.get_text("\n").splitlines():
         line = re.sub(r"\s+", " ", raw).strip()
         if len(line) < 4:
             continue
@@ -326,12 +401,22 @@ def send_email(subject: str, text: str, html: str | None = None) -> bool:
     import smtplib
     from email.mime.text import MIMEText
 
-    address = os.environ.get("EMAIL_ADDRESS")
+    # .strip() is critical: GitHub secrets are often pasted with a trailing
+    # newline. An unstripped address puts "\n" into the SMTP MAIL FROM, which
+    # Gmail rejects with "555 5.5.2 Syntax error" and a phantom empty recipient.
+    address = os.environ.get("EMAIL_ADDRESS", "").strip()
     # Google displays app passwords with spaces ("abcd efgh ...") - remove them
-    password = os.environ.get("EMAIL_APP_PASSWORD", "").replace(" ", "")
+    password = os.environ.get("EMAIL_APP_PASSWORD", "").replace(" ", "").strip()
     if not address or not password:
         return False
-    to = os.environ.get("EMAIL_TO", address)
+    # An empty EMAIL_TO (e.g. an unset GitHub secret passed through the
+    # workflow) must fall back to self, not produce "RCPT TO:<>".
+    to = (os.environ.get("EMAIL_TO") or "").strip() or address
+    recipients = [t.strip() for t in to.split(",") if t.strip()]
+    # Final guard: never hand smtplib an empty recipient list.
+    if not recipients:
+        recipients = [address]
+        to = address
     host = os.environ.get("SMTP_HOST", "smtp.gmail.com")
 
     if html:
@@ -347,7 +432,7 @@ def send_email(subject: str, text: str, html: str | None = None) -> bool:
     try:
         with smtplib.SMTP_SSL(host, 465, timeout=30) as server:
             server.login(address, password)
-            server.sendmail(address, [to], msg.as_string())
+            server.sendmail(address, recipients, msg.as_string())
         return True
     except Exception as e:
         print(f"  ! email send failed: {e}")
@@ -463,7 +548,7 @@ def check_site(site: dict, settings: dict, no_delay: bool) -> dict:
         print(f"  ! fetch failed: {e}")
         return {"status": "error", "name": name, "error": str(e)}
 
-    lines, links = extract_lines(html, base_url=url)
+    lines, links = extract_lines(html, base_url=url, selector=site.get("selector"))
     if not lines:
         return {"status": "error", "name": name, "error": "page produced no readable text"}
 

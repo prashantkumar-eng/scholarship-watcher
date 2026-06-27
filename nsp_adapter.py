@@ -149,17 +149,53 @@ def run(state_dir: Path, alert_fn) -> dict:
             f, ensure_ascii=False, indent=1,
         )
 
+    open_now = [(n, d) for n, d in schemes.items() if d.get("app_status") == "OPEN"]
+
     if not old:
-        print(f"  baseline saved ({len(schemes)} schemes)")
-        return {"status": "baseline", "name": "NSP Deep Adapter"}
+        print(f"  baseline saved ({len(schemes)} schemes, {len(open_now)} currently open)")
+        _alert_open_now(open_now, alert_fn)
+        return {"status": "changed" if open_now else "baseline", "name": "NSP Deep Adapter",
+                "new_lines": len(open_now)}
 
     events = diff_schemes(old, schemes)
-    if not events:
-        print(f"  no change ({len(schemes)} schemes tracked)")
-        return {"status": "ok", "name": "NSP Deep Adapter"}
+    if events:
+        print(f"  {len(events)} scheme event(s) detected")
+        body = "\n\n".join(events[:20])
+        more = f"\n\n…and {len(events) - 20} more events" if len(events) > 20 else ""
+        alert_fn(f"🎓 NSP Scheme Update\n{URL}\n\n{body}{more}")
 
-    print(f"  {len(events)} scheme event(s) detected")
-    body = "\n\n".join(events[:20])
-    more = f"\n\n…and {len(events) - 20} more events" if len(events) > 20 else ""
-    alert_fn(f"🎓 NSP Scheme Update\n{URL}\n\n{body}{more}")
-    return {"status": "changed", "name": "NSP Deep Adapter", "new_lines": len(events)}
+    # Send the "currently open" summary once per day: only if the previous
+    # snapshot was saved more than 20 hours ago (first run of the day).
+    try:
+        prev_checked = datetime.fromisoformat(
+            json.load(open(state_dir / STATE_FILE, encoding="utf-8"))["checked_at"]
+        )
+        hours_since = (datetime.now(timezone.utc) - prev_checked).total_seconds() / 3600
+    except Exception:
+        hours_since = 0
+
+    if hours_since >= 20:
+        print(f"  daily open-now summary: {len(open_now)} scheme(s) open")
+        _alert_open_now(open_now, alert_fn)
+    else:
+        print(f"  {len(open_now)} scheme(s) currently open, {len(events)} change event(s)")
+
+    status = "changed" if events else "ok"
+    return {"status": status, "name": "NSP Deep Adapter", "new_lines": len(events)}
+
+
+def _alert_open_now(open_now: list, alert_fn) -> None:
+    """Send a structured alert listing every currently-open NSP scheme with deadline."""
+    if not open_now:
+        return
+    lines = []
+    for n, d in sorted(open_now, key=lambda x: x[1].get("app_date", "")):
+        label = f"{n} [{d['ministry']}]" if d.get("ministry") else n
+        when = f" → apply by {d['app_date']}" if d.get("app_date") else ""
+        lines.append(f"🟢 {label}{when}")
+    body = "\n".join(lines[:25])
+    more = f"\n…and {len(open_now) - 25} more" if len(open_now) > 25 else ""
+    alert_fn(
+        f"🎓 NSP Open Scholarships ({len(open_now)} live now)\n{URL}\n\n"
+        + body + more
+    )
