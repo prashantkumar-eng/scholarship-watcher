@@ -1,14 +1,11 @@
 {
- "checked_at": "2026-06-30T14:13:07.760987+00:00",
- "hash": "150952f1f37283b85f9043002710032c975788eda082cc89df33f0a9d89c6e09",
+ "checked_at": "2026-06-30T16:04:20.694471+00:00",
+ "hash": "723aa19587ddc6608f8347962d595284f8eb1da8d2d6c08addce9f5e24fde7aa",
  "lines": [
-  "HTTP Status 404 – Not Found",
-  "Type",
-  "Status Report",
-  "Message",
+  "HTTP状态 404 - 未找到",
+  "状态报告",
   "The requested resource [/redirect.html] is not available",
-  "Description",
-  "The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.",
+  "源服务器未能找到目标资源的表示或者是不愿公开一个已经存在的资源表示。",
   "Application Server"
  ]
 }
