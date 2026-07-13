@@ -698,8 +698,10 @@ def main() -> int:
     if errors:
         report = "\n".join(f"• {e['name']}: {e['error'][:120]}" for e in errors)
         print(f"\nFailed sites:\n{report}")
-        # Send a health warning only if MANY sites fail (likely systemic)
-        if len(errors) >= max(3, len(results) // 3):
+        # Send a health warning only if MOST sites fail (likely systemic).
+        # ~10/30 always fail from GitHub's US servers (geo-blocked .gov.in
+        # hosts), so anything below a majority is normal, not an incident.
+        if len(errors) > len(results) // 2:
             health = f"⚠️ Watcher health: {len(errors)}/{len(results)} sites failed:\n{report[:3000]}"
             send_telegram(health)
             send_email("[Watcher] Health warning", health)
