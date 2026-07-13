@@ -613,42 +613,61 @@ def check_site(site: dict, settings: dict, no_delay: bool) -> dict:
         return {"status": "ok", "name": name}
 
     shown = items[:15]
-    text_parts = []
+    # Never email a dead link: verify each one; failures fall back to the
+    # source page (format_alert treats a missing link as "use the page URL").
+    from nsp_adapter import verify_link
+    checked = {}
     for it in shown:
-        entry = f"{it['emoji']} [{it['label']}] {it['line'][:200]}"
-        if it["link"] and it["link"].rstrip("/") != url.rstrip("/"):
-            entry += f"\n   👉 {it['link']}"
-        text_parts.append(entry)
-    more = f"\n\n…and {len(items) - 15} more" if len(items) > 15 else ""
-    text = (f"🔔 {name}\n\n" + "\n\n".join(text_parts) + more
-            + f"\n\nSource page: {url}")
-
-    rows = []
-    for it in shown:
-        link_cell = (f'<a href="{it["link"]}">Open&nbsp;➜</a>'
-                     if it["link"] and it["link"].rstrip("/") != url.rstrip("/")
-                     else "—")
-        rows.append(
-            f"<tr><td style='white-space:nowrap'>{it['emoji']} {it['label']}</td>"
-            f"<td>{it['line'][:250]}</td><td>{link_cell}</td></tr>")
-    html = f"""
-    <h2 style="margin-bottom:4px">🔔 {name}</h2>
-    <table border="1" cellpadding="8" cellspacing="0"
-           style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px">
-      <tr style="background:#f0f0f0">
-        <th align="left">Type</th><th align="left">Update</th><th align="left">Link</th>
-      </tr>
-      {''.join(rows)}
-    </table>
-    <p style="font-family:Arial,sans-serif;font-size:13px">
-      {f"…and {len(items) - 15} more changes<br>" if len(items) > 15 else ""}
-      Source page: <a href="{url}">{url}</a>
-    </p>"""
-
+        u = it["link"]
+        if u and u.rstrip("/") != url.rstrip("/"):
+            if u not in checked:
+                checked[u] = verify_link(u)
+            if not checked[u]:
+                it["link"] = None
+    text, html = format_alert(name, url, shown, len(items))
     top = shown[0]
     subject = f"{top['emoji']} {name}: {top['line'][:60]}"
     alert(text, html=html, subject=subject)
     return {"status": "changed", "name": name, "new_lines": len(items)}
+
+
+def format_alert(name: str, url: str, shown: list, total: int) -> tuple[str, str]:
+    """One readable card per site: the update text is the headline, the
+    site/page is always visible, and every update has one obvious button
+    (its own link if the page gave one, otherwise the source page)."""
+    text_parts = []
+    for it in shown:
+        entry = f"{it['emoji']} {it['line'][:200]}   ({it['label']})"
+        link = it["link"] if it["link"] and it["link"].rstrip("/") != url.rstrip("/") else url
+        entry += f"\n   👉 {link}"
+        text_parts.append(entry)
+    more = f"\n\n…and {total - len(shown)} more" if total > len(shown) else ""
+    text = (f"🔔 {name}\n{url}\n\n" + "\n\n".join(text_parts) + more)
+
+    cards = []
+    for it in shown:
+        link = it["link"] if it["link"] and it["link"].rstrip("/") != url.rstrip("/") else url
+        cards.append(f"""
+      <div style="border:1px solid #e0e0e0;border-left:4px solid #1a6e3c;
+                  border-radius:4px;padding:12px 16px;margin:10px 0">
+        <div style="font-size:15px;font-weight:700;margin-bottom:4px">
+          {it['emoji']} {it['line'][:250]}</div>
+        <div style="font-size:12px;color:#888;margin-bottom:8px">
+          {it['label']} · {name}</div>
+        <a href="{link}" style="background:#1a6e3c;color:#fff;padding:6px 14px;
+           border-radius:4px;text-decoration:none;font-size:13px;font-weight:700">
+           Open&nbsp;➜</a>
+      </div>""")
+    html = f"""
+    <div style="font-family:Arial,sans-serif;max-width:680px">
+      <h2 style="margin-bottom:2px">🔔 {name}</h2>
+      <p style="font-size:13px;margin-top:0;color:#555">
+        New on <a href="{url}">{url}</a>:</p>
+      {''.join(cards)}
+      {f"<p style='font-size:12px'>…and {total - len(shown)} more changes on this page</p>"
+       if total > len(shown) else ""}
+    </div>"""
+    return text, html
 
 
 def main() -> int:

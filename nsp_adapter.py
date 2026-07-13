@@ -188,7 +188,10 @@ def verify_link(url: str, timeout: int = 15) -> bool:
     try:
         resp = requests.get(url, headers={"User-Agent": USER_AGENT},
                             timeout=timeout, stream=True)
-        ok = resp.status_code < 400
+        # soft-404: many gov sites redirect bad URLs to an error page that
+        # answers 200 OK (e.g. .../Error/404.html), so check the final URL too
+        ok = resp.status_code < 400 \
+            and not re.search(r"/(error|404|notfound)", resp.url, re.I)
         resp.close()
         return ok
     except requests.RequestException:
