@@ -102,6 +102,22 @@ You can enable Telegram, email, or **both at once**.
 To change the schedule, edit the `cron:` line in
 `.github/workflows/watch.yml` (e.g. `"0 */2 * * *"` = every 2 hours).
 
+**GitHub can't reach everything.** ~10 of the 30 sites (including NSP
+itself) block foreign cloud IPs and always time out from GitHub's US
+servers. Those are covered only by the local Task Scheduler runs
+(`run_watcher.bat` / `run_digest.bat`), so keep the local tasks healthy.
+On a laptop the tasks MUST be allowed to run on battery, or Task
+Scheduler silently refuses them with result code `0x800710E0`:
+
+```powershell
+foreach ($n in "ScholarshipWatcher Scrape", "ScholarshipWatcher Digest 7PM") {
+  $t = Get-ScheduledTask -TaskName $n
+  $t.Settings.DisallowStartIfOnBatteries = $false
+  $t.Settings.StopIfGoingOnBatteries = $false
+  Set-ScheduledTask -InputObject $t
+}
+```
+
 ## Adding / removing websites
 
 Edit `sites.json` — each entry is just:
