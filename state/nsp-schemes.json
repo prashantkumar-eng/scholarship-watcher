@@ -1,185 +1,215 @@
 {
- "checked_at": "2026-06-27T14:55:44.229651+00:00",
+ "checked_at": "2026-07-13T08:42:17.449292+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/warb/PMSS_Guidelines_1197_3001-2023-24.pdf"
   },
   "Prime Minister'S Scholarship Scheme For Central Armed Police Forces And Assam Rifles (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/warb/PMSS_Guidelines_1197_3001-2023-24.pdf"
   },
   "AICTE - Swanath Scholarship Scheme ( Technical Degree) (Welfare Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf"
   },
   "PM USP Special Scholarship Scheme For Jammu Kashmir And Ladakh (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/PM_USPY(SSSJKL)SchemeSpecifications.pdf"
   },
   "AICTE - Pragati Scholarship Scheme For Girl Students ( Technical Degree) (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf"
   },
   "AICTE - Pragati Scholarship Scheme For Girl Students ( Technical Diploma) (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_G.pdf"
   },
   "AICTE - Saksham Scholarship Scheme For Specially Abled Student ( Technical Diploma) (Welfare Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf"
   },
   "AICTE - Saksham Scholarship Scheme For Specially Abled Student ( Technical Degree) (Welfare Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf"
   },
   "AICTE - Swanath Scholarship Scheme (Technical Diploma) (Welfare Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf"
   },
   "National Scholarship For Post Graduate Studies (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_NATIONAL_SCHOLARSHIP_FOR_POSTGRADUATE_STUDIES_UGC_2324.pdf"
   },
   "Ishan Uday Special Scholarship Scheme For NER (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_ISHAN UDAY_2324.pdf"
   },
   "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric (Welfare Based Scheme)": {
    "ministry": "Ministry of Labour & Employment",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-08-2026"
+   "app_date": "31-08-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/Labour_Ministry_Guidelines_of_scholarhsips schemes.pdf"
   },
   "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric (Welfare Based Scheme)": {
    "ministry": "Ministry of Labour & Employment",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/Labour_Ministry_Guidelines_of_scholarhsips schemes.pdf"
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In Schools For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf"
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In College For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/ApprovedmodifieddraftofTopClassCollege.pdf"
   },
   "National Renewable Energy Fellowship Scheme (Merit Based Scheme)": {
    "ministry": "Ministry of New And Renewable Energy",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": ""
   },
   "Stipend Scheme For Under Graduate And Post Graduate Studies In Indian Statistical Institute-Kolkata (Merit Based Scheme)": {
    "ministry": "Ministry of Statistics and Programme Implementation",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/STIPEND_STATICAL_GUIDLLINES.pdf"
   },
   "Icar National Talent Scholarship(Nts-Ug) (Merit Based Scheme)": {
    "ministry": "Department of Agriculture Research and Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/GuidelinesforICAR_NTS_Scholarship_3103_3104.pdf"
   },
   "Icar Post Graduate Scholarship(Pgs) (Merit Based Scheme)": {
    "ministry": "Department of Agriculture Research and Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/RevisedGuidelinesforICAR_JRF_SRFandPG_Scholarship_3105_3106.pdf"
   },
   "Icar National Talent Scholarship(Nts-Pg) (Merit Based Scheme)": {
    "ministry": "Department of Agriculture Research and Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/GuidelinesforICAR_NTS_Scholarship_3103_3104.pdf"
   },
   "Icar Junior Research Fellowships(Jrf) And Senior Research Fellowships(Srf) (Merit Based Scheme)": {
    "ministry": "Department of Agriculture Research and Education",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/RevisedGuidelinesforICAR_JRF_SRFandPG_Scholarship_3105_3106.pdf"
   },
   "Central Sector Scholarship Of Top Class Education For SC Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/Top_Class_Education_Scheme_2018.pdf"
   },
   "Pre Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
    "ministry": "Department of Empowerment of Persons with Disabilities",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf"
   },
   "Post Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
    "ministry": "Department of Empowerment of Persons with Disabilities",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf"
   },
   "Scholarship For Top Class Education For Students With Disabilities (Welfare Based Scheme)": {
    "ministry": "Department of Empowerment of Persons with Disabilities",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf"
   },
   "National Means Cum Merit Scholarship (Merit Based Scheme)": {
    "ministry": "Department of School Education & Literacy",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-08-2026"
+   "app_date": "31-08-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/NMMSSGuidelines.pdf"
   },
   "PM-USP – Central Sector Scheme Of Scholarship For College And University Students (CSSS) (Merit Based Scheme)": {
    "ministry": "Department of Higher Education",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf"
   },
   "National Fellowship And Scholarship For Higher Education Of ST Students - Scholarship (Formally Top Class Education For Schedule Tribe Students) (Merit Based Scheme)": {
    "ministry": "Ministry of Tribal Affairs",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/tribalfellowshipguideline.pdf"
   },
   "Financial Support To The Students Of NER For Higher Professional Courses(NEC Merit Scholarship) (Merit Based Scheme)": {
    "ministry": "Ministry of Tribal Affairs",
    "open_from": "",
    "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/NEC_1234_G.pdf"
   },
   "Prime Minister'S Scholarship Scheme For Ministry Of Railways (Merit Based Scheme)": {
    "ministry": "Ministry of Railways (Railway Board)",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
-   "app_date": "31-10-2026"
+   "app_date": "31-10-2026",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/MORB_GL.pdf"
   }
  }
 }
