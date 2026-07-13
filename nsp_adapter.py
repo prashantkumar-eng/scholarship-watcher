@@ -178,10 +178,6 @@ def _load_alerted(state_dir: Path) -> dict:
 
 def _save_alerted(state_dir: Path, alerted: dict) -> None:
     state_dir.mkdir(exist_ok=True)
-    # prune entries older than ~14 months so the file never grows forever
-    cutoff = datetime.now(timezone.utc).timestamp() - 425 * 86400
-    alerted = {k: v for k, v in alerted.items()
-               if datetime.fromisoformat(v).timestamp() >= cutoff}
     with open(state_dir / ALERTED_FILE, "w", encoding="utf-8") as f:
         json.dump(alerted, f, ensure_ascii=False, indent=1)
 
@@ -266,11 +262,10 @@ def _alert_new_open(open_now: list, alert_fn) -> None:
     and a VERIFIED link (dead links fall back to the portal page)."""
     if not open_now:
         return
-    ranked = sorted(open_now, key=lambda x: x[1].get("app_date", ""))
-    shown = ranked[:25]
+    shown = sorted(open_now, key=lambda x: x[1].get("app_date", ""))
 
     # Authenticity check: only include links that actually resolve.
-    checked: dict[str, bool] = {}
+    checked = {}
     for _, d in shown:
         u = d.get("url")
         if u and u not in checked:
@@ -288,7 +283,6 @@ def _alert_new_open(open_now: list, alert_fn) -> None:
             entry += f"\n   📄 Guidelines: {d['url']}"
         lines.append(entry)
     body = "\n\n".join(lines)
-    more = f"\n…and {len(open_now) - 25} more" if len(open_now) > 25 else ""
 
     rows = []
     for n, d in shown:
@@ -324,11 +318,9 @@ def _alert_new_open(open_now: list, alert_fn) -> None:
         </tr>
         {''.join(rows)}
       </table>
-      {f"<p style='font-size:12px'>…and {len(open_now) - 25} more</p>" if len(open_now) > 25 else ""}
     </div>"""
 
     alert_fn(
-        f"🆕 {len(open_now)} NEW scholarship(s) LIVE on NSP\n{URL}\n\n"
-        + body + more,
+        f"🆕 {len(open_now)} NEW scholarship(s) LIVE on NSP\n{URL}\n\n" + body,
         html=html,
     )
