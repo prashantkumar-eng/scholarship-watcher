@@ -159,10 +159,32 @@ LIVE_EVENT_RULES = [
 ]
 
 
+def academic_year_start() -> int:
+    """First calendar year of the CURRENT Indian academic year.
+    Sessions for the new year are announced from April onward, so
+    Jan-Mar 2027 still belongs to AY 2026-27."""
+    today = datetime.now()
+    return today.year if today.month >= 4 else today.year - 1
+
+
 def is_old_cycle(line: str) -> bool:
-    """A line whose newest mentioned year is before 2026 is old news."""
+    """Old news: the newest year mentioned is before the current academic
+    year, or a deadline-style date in the line has already passed."""
     years = [int(y) for y in re.findall(r"\b(20\d\d)\b", line)]
-    return bool(years) and max(years) < 2026
+    if years and max(years) < academic_year_start():
+        return True
+    # Expired deadline in the current year ("last date 03/05/2026" in July)
+    for m in re.finditer(
+            r"(?:till|until|upto|up\s*to|by|before|closing date|last date|"
+            r"closes?\s+on|deadline)\D{0,20}?(\d{1,2})[/-](\d{1,2})[/-](20\d\d)",
+            line, re.I):
+        day, month, year = map(int, m.groups())
+        try:
+            if datetime(year, month, day).date() < datetime.now().date():
+                return True
+        except ValueError:
+            pass
+    return False
 
 
 def classify_line(line: str) -> tuple[str, str] | None:
@@ -500,11 +522,12 @@ def send_digest() -> int:
     if not pending:
         print("Digest: nothing found today - sending short 'all quiet' mail")
         ok = send_email(
-            f"[Watcher] Daily digest {today}: no new scholarship events",
-            "All watched websites were checked today. "
-            "No new scholarships, internships or deadline changes were found.",
+            f"[Watcher] {today}: No new scholarship went live today",
+            "All watched websites were checked today.\n\n"
+            "📭 No NEW scholarship went live today — nothing new to apply for.\n"
+            "You will be emailed the moment a new one opens.",
         )
-        send_telegram(f"📭 Daily digest {today}: no new scholarship events.")
+        send_telegram(f"📭 {today}: No new scholarship went live today.")
         return 0 if ok else 1
 
     text = f"🎓 Daily Scholarship Digest — {today}\n" \
