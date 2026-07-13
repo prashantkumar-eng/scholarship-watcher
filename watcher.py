@@ -112,6 +112,10 @@ EXCLUSION_RULES = [
     # closed / inactive listings
     re.compile(r"applications? (are )?closed|no active schemes?|window closed"
                r"|last date (is )?over", re.I),
+    # site furniture: footers, buttons, how-to-use instructions
+    re.compile(r"©|copyright|all rights reserved", re.I),
+    re.compile(r"^\W*(check|verify)( scholarship)? eligibility\W*$"
+               r"|^\W*click on\b|^\W*provide (all|the) (necessary )?details", re.I),
 ]
 
 LIVE_EVENT_RULES = [
