@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-07-28T05:57:35.324380+00:00",
- "hash": "1b44a14560b613c8cabd7fa0ad713fc9e69dced34b1c0a458c3bb9989b0a87f9",
+ "checked_at": "2026-07-28T08:41:10.999840+00:00",
+ "hash": "09d530632afee481ecf1e3d3a147fc37158ce193b70e7676f743244365aa1655",
  "lines": [
   "Registered Institutes",
   "Scholarship Result",
@@ -20,6 +20,7 @@
   "RBL BANK LIMITED",
   "WAGH BAKRI FOUNDATION",
   "-- Select Course Level --",
+  "Diploma",
   "Under Graduate",
   "EdCIL India Limited",
   "eClerx Services Limited",
