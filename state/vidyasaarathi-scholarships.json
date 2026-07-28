@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-07-28T08:41:10.999840+00:00",
- "hash": "09d530632afee481ecf1e3d3a147fc37158ce193b70e7676f743244365aa1655",
+ "checked_at": "2026-07-28T11:27:22.511763+00:00",
+ "hash": "6725086a7ff6bc4fb849a26099a6ce2087f3c60d15127d1f12907474ebaa23d3",
  "lines": [
   "Registered Institutes",
   "Scholarship Result",
@@ -18,6 +18,7 @@
   "Career Test",
   "-- Select Company --",
   "RBL BANK LIMITED",
+  "REDINGTON FOUNDATION",
   "WAGH BAKRI FOUNDATION",
   "-- Select Course Level --",
   "Diploma",
@@ -65,7 +66,6 @@
   "AIA CSR Foundation",
   "H.G. Infra Engineering Ltd.",
   "ArcelorMittal Nippon Steel India Limited",
-  "Redington Foundation",
   "United Breweries Limited",
   "J K Lakshmi Cement Limited",
   "Stovec Industries Limited",
