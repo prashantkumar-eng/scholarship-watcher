@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-07-13T08:42:17.449292+00:00",
+ "checked_at": "2026-07-31T11:49:49.519344+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -25,7 +25,7 @@
   "PM USP Special Scholarship Scheme For Jammu Kashmir And Ladakh (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
    "open_from": "",
-   "app_status": "NOT YET OPENED",
+   "app_status": "OPEN",
    "app_date": "",
    "url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/PM_USPY(SSSJKL)SchemeSpecifications.pdf"
   },
@@ -155,18 +155,25 @@
    "app_date": "31-10-2026",
    "url": "https://scholarships.gov.in/public/schemeGuidelines/Top_Class_Education_Scheme_2018.pdf"
   },
-  "Pre Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
-   "ministry": "Department of Empowerment of Persons with Disabilities",
+  "Free Coaching For Scs OBCs And Beneficiaries Of PM Cares Children Scheme (Welfare Based Scheme)": {
+   "ministry": "Department of Social Justice & Empowerment",
    "open_from": "",
    "app_status": "NOT YET OPENED",
    "app_date": "",
+   "url": "https://scholarships.gov.in/public/schemeGuidelines/guid_3108.pdf"
+  },
+  "Pre Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
+   "ministry": "Department of Empowerment of Persons with Disabilities",
+   "open_from": "25-07-2026",
+   "app_status": "OPEN",
+   "app_date": "31-08-2026",
    "url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf"
   },
   "Post Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
    "ministry": "Department of Empowerment of Persons with Disabilities",
-   "open_from": "",
-   "app_status": "NOT YET OPENED",
-   "app_date": "",
+   "open_from": "25-07-2026",
+   "app_status": "OPEN",
+   "app_date": "31-10-2026",
    "url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf"
   },
   "Scholarship For Top Class Education For Students With Disabilities (Welfare Based Scheme)": {
@@ -186,7 +193,7 @@
   "PM-USP – Central Sector Scheme Of Scholarship For College And University Students (CSSS) (Merit Based Scheme)": {
    "ministry": "Department of Higher Education",
    "open_from": "",
-   "app_status": "NOT YET OPENED",
+   "app_status": "OPEN",
    "app_date": "",
    "url": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf"
   },
@@ -200,7 +207,7 @@
   "Financial Support To The Students Of NER For Higher Professional Courses(NEC Merit Scholarship) (Merit Based Scheme)": {
    "ministry": "Ministry of Tribal Affairs",
    "open_from": "",
-   "app_status": "NOT YET OPENED",
+   "app_status": "OPEN",
    "app_date": "",
    "url": "https://scholarships.gov.in/public/schemeGuidelines/NEC_1234_G.pdf"
   },
