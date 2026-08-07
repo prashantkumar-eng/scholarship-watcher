@@ -1,7 +1,14 @@
 {
- "checked_at": "2026-08-07T09:58:36.562678+00:00",
- "hash": "930cb379321f6ce3cdaf5db7d4348290945e3702b0a04cd04622e9138dc31289",
+ "checked_at": "2026-08-07T12:55:16.297944+00:00",
+ "hash": "150952f1f37283b85f9043002710032c975788eda082cc89df33f0a9d89c6e09",
  "lines": [
-  "502 Bad Gateway"
+  "HTTP Status 404 – Not Found",
+  "Type",
+  "Status Report",
+  "Message",
+  "The requested resource [/redirect.html] is not available",
+  "Description",
+  "The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.",
+  "Application Server"
  ]
 }
