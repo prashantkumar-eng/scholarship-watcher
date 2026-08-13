@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-08-13T10:12:03.627607+00:00",
- "hash": "ca20a2f39c6170abaa95bde12a690e32cd44440d9c87a96ac27c450be66f5bb8",
+ "checked_at": "2026-08-13T13:13:06.409780+00:00",
+ "hash": "8bccd5c1feeb2b3bcd4d22cb6048506d9b9b99d7eb788b6a771a3e5fc5b6dbca",
  "lines": [
   "Registered Institutes",
   "Scholarship Result",
@@ -17,6 +17,7 @@
   "Closed Schemes",
   "Career Test",
   "-- Select Company --",
+  "BHARATHI CEMENT CORPORATION PRIVATE LIMITED",
   "J K LAKSHMI CEMENT LIMITED",
   "RBL BANK LIMITED",
   "REDINGTON FOUNDATION",
@@ -75,7 +76,6 @@
   "Sterling and Wilson Solar Ltd",
   "TATA REALTY AND INFRASTRUCTURE LIMITED",
   "Rishi Khosla",
-  "Bharathi Cement Corporation Private Limited",
   "LTI Limited",
   "Alleima India Pvt Limited",
   "Eaton India Foundation",
