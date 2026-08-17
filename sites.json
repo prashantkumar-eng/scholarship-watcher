@@ -1,0 +1,135 @@
+{
+  "settings": {
+    "delivery_mode": "digest",
+    "sources_file": "sources.json",
+    "workers": 12,
+    "request_delay_seconds": 1,
+    "timeout_seconds": 30,
+    "keywords": [
+      "scholarship",
+      "scholarships",
+      "internship",
+      "internships",
+      "fellowship",
+      "grant",
+      "grants",
+      "stipend",
+      "apply",
+      "application",
+      "last date",
+      "deadline",
+      "extended",
+      "scheme",
+      "registration",
+      "live",
+      "open",
+      "renewal",
+      "fresh",
+      "amount",
+      "eligibility",
+      "notification",
+      "circular",
+      "advertisement",
+      "advt",
+      "छात्रवृत्ति",
+      "इंटर्नशिप",
+      "आवेदन",
+      "अंतिम तिथि",
+      "योजना"
+    ]
+  },
+  "sites": [
+    {
+      "name": "Karnataka SSP",
+      "url": "https://ssp.karnataka.gov.in/Home",
+      "renderer": "browser"
+    },
+    {
+      "name": "MoSPI Internship",
+      "url": "https://internship.mospi.gov.in/",
+      "renderer": "browser"
+    },
+    {
+      "name": "NSP Domicile Schemes",
+      "url": "https://scholarships.gov.in/allschemesdomicile",
+      "renderer": "browser"
+    },
+    {
+      "name": "Odisha Scholarship Details",
+      "url": "https://scholarship.odisha.gov.in/scholarship-details",
+      "renderer": "browser"
+    },
+    {
+      "name": "INSPIRE Online",
+      "url": "https://online-inspire.gov.in/#",
+      "verify_ssl": false,
+      "selector": "[id*=notice], [class*=notice], [id*=news], marquee, [id*=update]"
+    },
+    {
+      "name": "UP Scholarship",
+      "url": "https://scholarship.up.gov.in/index.aspx",
+      "legacy_ssl": true
+    },
+    {
+      "name": "Mitacs Globalink Internship",
+      "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/",
+      "renderer": "browser"
+    },
+    {
+      "name": "SBI Foundation ACE",
+      "url": "https://sbif-ace-pass.sbifoundation.info/",
+      "renderer": "browser"
+    },
+    {
+      "name": "Azim Premji Scholarship",
+      "url": "https://azimpremjifoundation.org/what-we-do/education/azim-premji-scholarship/",
+      "renderer": "browser"
+    },
+    {
+      "name": "Chevening India",
+      "url": "https://www.chevening.org/scholarship/india/",
+      "renderer": "browser"
+    },
+    {
+      "name": "Banglar Shiksha NMMSE PDF",
+      "url": "https://banglarshiksha.wb.gov.in/scholarships/readwrite/instruction/NMMSE_2026_instruction.pdf",
+      "legacy_ssl": true
+    },
+    {
+      "name": "Kerala UNNATHI Scholarship PDF",
+      "url": "https://scdd.kerala.gov.in/images/UNNATHI_SCHOLARSHIP.pdf",
+      "legacy_ssl": true
+    },
+    {
+      "name": "ICCR Kala Saadhak Prize",
+      "url": "https://iccr.gov.in/iccr-kala-saadhak-prize",
+      "verify_ssl": false
+    },
+    {
+      "name": "IIAP Postdoctoral Opportunities",
+      "url": "https://www.iiap.res.in/post_doc/?q=Home",
+      "verify_ssl": false
+    },
+    {
+      "name": "Chhattisgarh School Scholarship",
+      "url": "https://schoolscholarship.cg.nic.in/fhome.aspx",
+      "verify_ssl": false
+    },
+    {
+      "name": "INSPIRE Awards",
+      "url": "https://www.inspireawards-dst.gov.in/",
+      "verify_ssl": false
+    },
+    {
+      "name": "RBI Summer Placement",
+      "url": "https://opportunities.rbi.org.in/scripts/summer.aspx#",
+      "renderer": "browser"
+    },
+    {
+      "name": "Central Coalfields Scholarship Notice",
+      "url": "https://www.centralcoalfields.in/hindi/ind/dp_val.php?file=MTI2NDEwNDYyNS5wZGY=&token=e93bd18270db8dfbe620f5fa194ecea49e910b959f093fcbfd6bfc47351d3832&yer=MjAyNi0yMDI3",
+      "renderer": "browser"
+    }
+  ],
+  "still_blocked_sites": []
+}

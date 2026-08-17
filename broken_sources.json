@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-08-17T07:22:09.413043+00:00",
+  "healthy_count": 41,
+  "broken_count": 1,
+  "sources": [
+    {
+      "url": "https://online-inspire.gov.in/#",
+      "reason": "connection timed out during the latest check; retained for automatic retry"
+    }
+  ]
+}
