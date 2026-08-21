@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-08-21T14:10:32.988207+00:00",
- "hash": "b34194d86090a69aac35c74a4bbe4c0cf56a0819181d54950523ef55dfde67ea",
+ "checked_at": "2026-08-21T15:33:29.827692+00:00",
+ "hash": "143df8176c349288749a791deba6a9d83368b5d56efc827bc08ded18eedd8d80",
  "lines": [
   "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
   "If you decline, only a single cookie will remember your preference not to be tracked.",
@@ -111,7 +111,7 @@
   "https://www.fappr.pr.gov.br/",
   "Yes; Brazilian citizen",
   "Eligible institutions in Brazil",
-  ": All Science, Technology and Innovation Institutions (ICTs) and universities located in the State of Paraná, Brazil, with headquarters/CNPJ in Paraná, as approved by Fundação Araucária.",
+  ": Only public, Technology and Innovation Institutions (ICTs) or private non-profit ICTs as defined under Paraná State Law No. 20,541/2021 with headquarters/CNPJ in Paraná, as approved by Fundação Araucária.",
   "Note: If you cannot find your home institution on the drop-down menu, email",
   "and we will determine if it can be added to the list",
   "Full-time undergraduate students or combined undergraduate-Master’s program. Applicants must at least be enrolled in the second year of their program.",
@@ -179,6 +179,7 @@
   "Eligible institutions in Finland:",
   "All Finnish higher education institutions (universities and universities of applied sciences).",
   ", and we will determine if it can be added to the list",
+  "After the completion of the Mitacs program students must have a minimum of one semester and a maximum of three semesters remaining in their degree when they return to Finland.",
   "4.0/5.0 (approximately equivalent to 80%)",
   "France",
   "University of Grenoble Alpes –",
