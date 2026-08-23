@@ -1,9 +1,9 @@
 {
-  "scanned_at": "2026-08-22T13:57:47.475662+00:00",
+  "scanned_at": "2026-08-23T13:59:25.631608+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 28,
+  "reachable_seed_count": 29,
   "detail_count": 52,
-  "opportunity_count": 2,
+  "opportunity_count": 1,
   "opportunities": [
     {
       "category": "Grant",
@@ -11,13 +11,6 @@
       "deadline": "2026-09-14",
       "url": "https://www.epfl.ch/research/funding/epfl-programmes/swiss-ai-initiative-large-grants/",
       "verification": "Official provider"
-    },
-    {
-      "category": "Internship",
-      "title": "Internships and Small Projects Archives",
-      "deadline": "2026-08-22",
-      "url": "https://www.lawctopus.com/category/opportunities-events/internships-small-projects/",
-      "verification": "Established scholarship source"
     }
   ]
 }
