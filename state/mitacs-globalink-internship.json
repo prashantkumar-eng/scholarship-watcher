@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-08-25T21:27:52.354441+00:00",
- "hash": "2e65051a87756ec00736d0b55e4dbfd64bb4a9bf01c9afca891acccfd034ae7e",
+ "checked_at": "2026-08-26T01:09:10.036129+00:00",
+ "hash": "9968809f66f2a9e9abe9b9e794f27e51d243c047649f84480c1f9b994fa00869",
  "lines": [
   "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
   "If you decline, only a single cookie will remember your preference not to be tracked.",
@@ -12,6 +12,7 @@
   "Français",
   "Get Started",
   "Menu",
+  "FR-CA",
   "Programs",
   "About",
   "Strategic Plan 2026-2030",
@@ -249,7 +250,8 @@
   "Eligible institutions in India:",
   "View eligibility list for India",
   "– no other institutions can be added.",
-  "If your institution is not listed, you are not eligible to apply.",
+  "– If your institution is not listed, you are not eligible to apply.",
+  "– At this time, applicants from Indian Institutes of Technology (IITs) are not eligible to participate in the 2027 GRI program.",
   "Engineering (B.E) and",
   "Technology (B. Tech)",
   "Ireland - 2027 Cohort Eligibility",
