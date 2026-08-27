@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-08-27T00:29:51.207230+00:00",
- "hash": "bcc63e3582236edd413b1c58092df4347d9e524b7d06a76f059646ca606328fb",
+ "checked_at": "2026-08-27T13:46:54.346705+00:00",
+ "hash": "9968809f66f2a9e9abe9b9e794f27e51d243c047649f84480c1f9b994fa00869",
  "lines": [
   "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
   "If you decline, only a single cookie will remember your preference not to be tracked.",
@@ -12,6 +12,7 @@
   "Français",
   "Get Started",
   "Menu",
+  "FR-CA",
   "Programs",
   "About",
   "Strategic Plan 2026-2030",
