@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-08-28T00:18:25.319691+00:00",
- "hash": "801f581844b6935e7199d4b6d20415b524809fab711c351cd9c64785fa9cc4c1",
+ "checked_at": "2026-08-28T14:56:00.192576+00:00",
+ "hash": "8d12f2d733b51d56b0e8932a922cb8d0b60e58260523ad0b33eb9cdebae31311",
  "lines": [
   "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
   "If you decline, only a single cookie will remember your preference not to be tracked.",
@@ -9,7 +9,6 @@
   "Contact Us",
   "News & Events",
   "Mitacs Plus",
-  "English",
   "Français",
   "Get Started",
   "Menu",
@@ -22,6 +21,7 @@
   "Innovation Insights",
   "Completed Projects",
   "Contact",
+  "English",
   "Search our Site:",
   "Student",
   "Globalink Research Internship: Students",
