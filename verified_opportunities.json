@@ -1,8 +1,8 @@
 {
-  "scanned_at": "2026-08-27T23:07:14.536535+00:00",
+  "scanned_at": "2026-08-28T23:14:15.581921+00:00",
   "seed_count": 42,
   "reachable_seed_count": 28,
-  "detail_count": 48,
+  "detail_count": 43,
   "opportunity_count": 2,
   "opportunities": [
     {
@@ -15,7 +15,7 @@
     {
       "category": "Internship",
       "title": "Internships and Small Projects Archives",
-      "deadline": "2026-08-27",
+      "deadline": "2026-08-28",
       "url": "https://www.lawctopus.com/category/opportunities-events/internships-small-projects/",
       "verification": "Established scholarship source"
     }
