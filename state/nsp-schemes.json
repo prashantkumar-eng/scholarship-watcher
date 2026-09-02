@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-09-02T02:47:03.865251+00:00",
+ "checked_at": "2026-09-02T07:40:49.629453+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -67,17 +67,17 @@
    "app_status": "NOT YET OPENED",
    "app_date": ""
   },
-  "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric (Welfare Based Scheme)": {
-   "ministry": "Ministry of Labour & Employment",
-   "open_from": "01-06-2026",
-   "app_status": "OPEN",
-   "app_date": "31-10-2026"
-  },
   "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric (Welfare Based Scheme)": {
    "ministry": "Ministry of Labour & Employment",
    "open_from": "01-06-2026",
    "app_status": "OPEN",
    "app_date": "30-09-2026"
+  },
+  "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric (Welfare Based Scheme)": {
+   "ministry": "Ministry of Labour & Employment",
+   "open_from": "01-06-2026",
+   "app_status": "OPEN",
+   "app_date": "31-10-2026"
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In Schools For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",
