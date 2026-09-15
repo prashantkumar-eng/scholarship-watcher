@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-09-14T21:29:03.649379+00:00",
- "hash": "3c726a2b7d9373a0537c82c61faece28742e32034b4a1477d52f30329fe9b18e",
+ "checked_at": "2026-09-15T03:18:19.225243+00:00",
+ "hash": "51d87c3381ae9fabcea1f4e0e78a8aedd7a37b44b0ccc193a73deffb76d8b8c1",
  "lines": [
   "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
   "If you decline, only a single cookie will remember your preference not to be tracked.",
@@ -387,6 +387,7 @@
   "https://www.cupt.net/",
   "Eligible institution in Thailand",
   ": All Thai universities",
+  "IELTS 6",
   "Applicants from Thailand are required to notify their home institution of their intention to participate in the Globalink Research Internship (GRI) program. The home institution must then inform CUPT and complete the required coordination process before students can submit an application through the GRI portal.",
   "The University members of CUPT will select the qualified students to apply GRI program.",
   "Tunisia",
