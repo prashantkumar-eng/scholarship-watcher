@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-09-15T16:14:45.771571+00:00",
- "hash": "51d87c3381ae9fabcea1f4e0e78a8aedd7a37b44b0ccc193a73deffb76d8b8c1",
+ "checked_at": "2026-09-15T17:48:19.571940+00:00",
+ "hash": "58368ab29614df593df23a734ad58d14d084ea740753ce639e1ed5ede6af692a",
  "lines": [
   "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
   "If you decline, only a single cookie will remember your preference not to be tracked.",
@@ -12,6 +12,7 @@
   "Français",
   "Get Started",
   "Menu",
+  "FR-CA",
   "Programs",
   "About",
   "Return on Innovation",
