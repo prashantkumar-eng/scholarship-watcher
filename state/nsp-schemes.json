@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-09-16T10:53:00.633865+00:00",
+ "checked_at": "2026-09-16T16:08:41.168513+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -57,15 +57,15 @@
   },
   "National Scholarship For Post Graduate Studies (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
-   "open_from": "",
-   "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "open_from": "16-09-2026",
+   "app_status": "OPEN",
+   "app_date": "31-10-2026"
   },
   "Ishan Uday Special Scholarship Scheme For NER (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
-   "open_from": "",
-   "app_status": "NOT YET OPENED",
-   "app_date": ""
+   "open_from": "16-09-2026",
+   "app_status": "OPEN",
+   "app_date": "31-10-2026"
   },
   "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric (Welfare Based Scheme)": {
    "ministry": "Ministry of Labour & Employment",
