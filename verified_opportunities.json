@@ -1,10 +1,17 @@
 {
-  "scanned_at": "2026-09-21T18:56:55.826074+00:00",
+  "scanned_at": "2026-09-22T17:47:22.658623+00:00",
   "seed_count": 42,
   "reachable_seed_count": 27,
   "detail_count": 40,
-  "opportunity_count": 1,
+  "opportunity_count": 2,
   "opportunities": [
+    {
+      "category": "Internship",
+      "title": "Associates and Interns at S.S. Khanduja & Co. [2 Associate Positions; Internships on Rolling Basis; Performance-Based Stipend]: Apply Now!",
+      "deadline": "2026-09-22",
+      "url": "https://www.lawctopus.com/associates-and-interns-at-s-s-khanduja-co/",
+      "verification": "Established scholarship source"
+    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
