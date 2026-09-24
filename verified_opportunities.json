@@ -1,10 +1,17 @@
 {
-  "scanned_at": "2026-09-23T18:00:43.642469+00:00",
+  "scanned_at": "2026-09-24T18:00:25.292261+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 26,
+  "reachable_seed_count": 25,
   "detail_count": 40,
-  "opportunity_count": 1,
+  "opportunity_count": 2,
   "opportunities": [
+    {
+      "category": "Internship",
+      "title": "Internship Opportunity at Mahendra Gargieya & Associates, Jaipur [Offline; October 2026; Stipend Available]: Apply Now!",
+      "deadline": "2026-09-24",
+      "url": "https://www.lawctopus.com/internship-opportunity-at-mahendra-gargieya-associates-jaipur/",
+      "verification": "Established scholarship source"
+    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
