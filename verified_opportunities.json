@@ -1,17 +1,10 @@
 {
-  "scanned_at": "2026-09-30T18:36:40.369826+00:00",
+  "scanned_at": "2026-10-01T19:04:20.284910+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 25,
+  "reachable_seed_count": 26,
   "detail_count": 40,
-  "opportunity_count": 2,
+  "opportunity_count": 1,
   "opportunities": [
-    {
-      "category": "Internship",
-      "title": "Internship Opportunity at CPSO Law Office [Long-Term; Civil & Commercial Litigation; From Oct 2026]: Apply Now!",
-      "deadline": "2027-03-31",
-      "url": "https://www.lawctopus.com/internship-opportunity-at-cpso-law-office/",
-      "verification": "Established scholarship source"
-    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
