@@ -1,11 +1,7 @@
 {
- "checked_at": "2026-10-08T09:59:37.539174+00:00",
- "hash": "cebf2dc1ddb428b65c0be367525c2316e2ea07c4abfe97a04b40eea1a4d24ce5",
+ "checked_at": "2026-10-08T18:27:04.351021+00:00",
+ "hash": "eb530b6b7d3252455ed7b47a679fab80150461465c0903a0b83b550487648c5c",
  "lines": [
-  "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
-  "If you decline, only a single cookie will remember your preference not to be tracked.",
-  "Accept",
-  "Decline",
   "Contact Us",
   "News & Events",
   "Mitacs Plus",
@@ -609,6 +605,10 @@
   "Sitemap",
   "RSS Feed",
   "We Support Diversity",
-  "Privacy Statement"
+  "Privacy Statement",
+  "This website stores cookies on your computer to collect data on your interaction and remember you. This information helps improve and customize your browsing experience and for analytics. See our Privacy Policy for more details.",
+  "If you decline, only a single cookie will remember your preference not to be tracked.",
+  "Accept",
+  "Decline"
  ]
 }
