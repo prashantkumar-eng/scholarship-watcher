@@ -1,10 +1,17 @@
 {
-  "scanned_at": "2026-10-09T19:00:41.694622+00:00",
+  "scanned_at": "2026-10-10T18:02:00.876331+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 26,
+  "reachable_seed_count": 27,
   "detail_count": 36,
-  "opportunity_count": 1,
+  "opportunity_count": 2,
   "opportunities": [
+    {
+      "category": "Internship",
+      "title": "NITI Aayog Internship 2026, New Delhi [Oct; 6 Weeks]: Apply by Oct 10",
+      "deadline": "2026-10-10",
+      "url": "https://www.lawctopus.com/niti-aayog-internship-2026-new-delhi-oct/",
+      "verification": "Established scholarship source"
+    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
