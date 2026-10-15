@@ -166,5 +166,12 @@
   "subject": "1 deeply verified current opportunities",
   "text": "OpportunityType\tTitle\tDeadline\tValidLink\tVerification\nInternship\tInternships and Small Projects Archives\t2026-12-14\thttps://www.lawctopus.com/category/opportunities-events/internships-small-projects/\tEstablished scholarship source",
   "html": "<h2>Verified Current Opportunities</h2><p>Each page was opened successfully and its future deadline was confirmed.</p><table border='1' cellpadding='7' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px'><tr><th>Type</th><th>Title</th><th>Deadline</th><th>Valid link</th><th>Verification</th></tr><tr><td>Internship</td><td>Internships and Small Projects Archives</td><td>2026-12-14</td><td><a href='https://www.lawctopus.com/category/opportunities-events/internships-small-projects/'>Open</a></td><td>Established scholarship source</td></tr></table>"
+ },
+ {
+  "found_at": "2026-10-15T16:14:41.381223+00:00",
+  "fingerprint": "ab7f64db780d9366cc8d08ce8fa9dd70cc1acd584b47761d3d7c4fa5fab8f2ca",
+  "subject": "📅 www.lawctopus.com — wintern internship opportunity national green: Get an Internship",
+  "text": "ScholarshipTitle\tDeadline\tApplyLink\nGet an Internship\t2026-11-01\thttps://www.lawctopus.com/wintern-internship-opportunity-national-green-tribunal-ngt-delhi/",
+  "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>Get an Internship</td><td style='white-space:nowrap'>2026-11-01</td><td><a href=\"https://www.lawctopus.com/wintern-internship-opportunity-national-green-tribunal-ngt-delhi/\">Apply / view details</a></td></tr></table>"
  }
 ]
