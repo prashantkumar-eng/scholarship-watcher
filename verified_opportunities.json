@@ -1,17 +1,10 @@
 {
-  "scanned_at": "2026-10-17T16:39:21.713899+00:00",
+  "scanned_at": "2026-10-18T16:46:32.739900+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 27,
-  "detail_count": 36,
-  "opportunity_count": 2,
+  "reachable_seed_count": 21,
+  "detail_count": 32,
+  "opportunity_count": 1,
   "opportunities": [
-    {
-      "category": "Internship",
-      "title": "Internships and Small Projects Archives",
-      "deadline": "2026-10-17",
-      "url": "https://www.lawctopus.com/category/opportunities-events/internships-small-projects/",
-      "verification": "Established scholarship source"
-    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
