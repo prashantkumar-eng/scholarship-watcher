@@ -208,5 +208,12 @@
   "subject": "1 deeply verified current opportunities",
   "text": "OpportunityType\tTitle\tDeadline\tValidLink\tVerification\nInternship\tInternships and Small Projects Archives\t2026-10-17\thttps://www.lawctopus.com/category/opportunities-events/internships-small-projects/\tEstablished scholarship source",
   "html": "<h2>Verified Current Opportunities</h2><p>Each page was opened successfully and its future deadline was confirmed.</p><table border='1' cellpadding='7' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px'><tr><th>Type</th><th>Title</th><th>Deadline</th><th>Valid link</th><th>Verification</th></tr><tr><td>Internship</td><td>Internships and Small Projects Archives</td><td>2026-10-17</td><td><a href='https://www.lawctopus.com/category/opportunities-events/internships-small-projects/'>Open</a></td><td>Established scholarship source</td></tr></table>"
+ },
+ {
+  "found_at": "2026-10-18T07:44:34.077793+00:00",
+  "fingerprint": "c0adf352542091760c31f4d5cc0d3251c0b294849d175b4a0936a63218f1cc75",
+  "subject": "⚙️ www.lawctopus.com — wintern internship opportunity national green: Internships and Small Projects",
+  "text": "ScholarshipTitle\tDeadline\tApplyLink\nInternships and Small Projects\tNot specified\thttps://www.lawctopus.com/internship-experience-ram-gokul-advocates-associates-chennai/",
+  "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>Internships and Small Projects</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://www.lawctopus.com/internship-experience-ram-gokul-advocates-associates-chennai/\">Apply / view details</a></td></tr></table>"
  }
 ]
