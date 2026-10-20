@@ -1,17 +1,10 @@
 {
-  "scanned_at": "2026-10-19T19:29:53.584478+00:00",
+  "scanned_at": "2026-10-20T18:09:02.476245+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 22,
-  "detail_count": 32,
-  "opportunity_count": 2,
+  "reachable_seed_count": 27,
+  "detail_count": 36,
+  "opportunity_count": 1,
   "opportunities": [
-    {
-      "category": "Internship",
-      "title": "RCLSA November Batch Internship 2026 [25 Seats]: Apply by Nov 2",
-      "deadline": "2026-10-19",
-      "url": "https://www.lawctopus.com/rclsa-november-batch-internship-2026/",
-      "verification": "Established scholarship source"
-    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
