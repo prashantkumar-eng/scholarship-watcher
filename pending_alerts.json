@@ -243,5 +243,12 @@
   "subject": "1 deeply verified current opportunities",
   "text": "OpportunityType\tTitle\tDeadline\tValidLink\tVerification\nInternship\tRCLSA November Batch Internship 2026 [25 Seats]: Apply by Nov 2\t2026-10-19\thttps://www.lawctopus.com/rclsa-november-batch-internship-2026/\tEstablished scholarship source",
   "html": "<h2>Verified Current Opportunities</h2><p>Each page was opened successfully and its future deadline was confirmed.</p><table border='1' cellpadding='7' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px'><tr><th>Type</th><th>Title</th><th>Deadline</th><th>Valid link</th><th>Verification</th></tr><tr><td>Internship</td><td>RCLSA November Batch Internship 2026 [25 Seats]: Apply by Nov 2</td><td>2026-10-19</td><td><a href='https://www.lawctopus.com/rclsa-november-batch-internship-2026/'>Open</a></td><td>Established scholarship source</td></tr></table>"
+ },
+ {
+  "found_at": "2026-10-20T08:09:39.480072+00:00",
+  "fingerprint": "8cd8e5427ff8b2a83359a10d14c02999932adb65c7258aa94ff28ec278279840",
+  "subject": "🟢 www.lawctopus.com — wintern internship opportunity national green: Internships and Small Projects",
+  "text": "ScholarshipTitle\tDeadline\tApplyLink\nInternships and Small Projects\tNot specified\thttps://www.lawctopus.com/job-post-legal-assessment-intern-and-legal-ibc-associate-at-vishrut-associates-delhi-ncr/",
+  "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>Internships and Small Projects</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://www.lawctopus.com/job-post-legal-assessment-intern-and-legal-ibc-associate-at-vishrut-associates-delhi-ncr/\">Apply / view details</a></td></tr></table>"
  }
 ]
