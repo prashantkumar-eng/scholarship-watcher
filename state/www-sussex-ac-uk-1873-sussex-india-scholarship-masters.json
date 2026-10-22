@@ -1,10 +1,14 @@
 {
- "checked_at": "2026-10-22T11:18:01.231970+00:00",
- "hash": "2aa0766bae07add98418a1508def801bc0a18288ed4b35689a64095c5f399b82",
+ "checked_at": "2026-10-22T16:37:08.925385+00:00",
+ "hash": "9b520999b2060f38c72eed07e7ed2f8b058871184a4d217acd2d35efc313d74f",
  "lines": [
   "Temporarily offline",
   "Our website is currently offline for maintenance. We will be back online soon.",
-  "Internal software services remain available to students and staff including Canvas, Sussex Direct, Library Search and the Sussex Sport booking page.",
+  "Internal software services remain available to students and staff:",
+  "Canvas",
+  "Sussex Direct",
+  "Library Search",
+  "Sussex Sport booking",
   "Need urgent assistance?",
   "Admissions enquiries, you can email our admissions team:",
   "Undergraduates please email:",
