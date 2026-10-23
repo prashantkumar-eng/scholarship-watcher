@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-23T03:18:10.069060+00:00",
+ "checked_at": "2026-10-23T11:14:26.715628+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -21,9 +21,9 @@
   },
   "PM USP Special Scholarship Scheme For Jammu Kashmir And Ladakh (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
-   "open_from": "",
+   "open_from": "22-10-2026",
    "app_status": "OPEN",
-   "app_date": ""
+   "app_date": "31-10-2026"
   },
   "AICTE - Pragati Scholarship Scheme For Girl Students ( Technical Degree) (Merit Based Scheme)": {
    "ministry": "All India Council For Technical Education",
@@ -81,9 +81,9 @@
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In Schools For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",
-   "open_from": "",
+   "open_from": "22-10-2026",
    "app_status": "OPEN",
-   "app_date": ""
+   "app_date": "30-11-2026"
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In College For OBC, EBC And DNT Students (Merit Based Scheme)": {
    "ministry": "Department of Social Justice & Empowerment(Backward Classes)",
