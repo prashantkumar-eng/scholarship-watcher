@@ -1,10 +1,17 @@
 {
-  "scanned_at": "2026-10-24T16:52:22.924430+00:00",
+  "scanned_at": "2026-10-25T17:15:04.345888+00:00",
   "seed_count": 42,
-  "reachable_seed_count": 27,
+  "reachable_seed_count": 28,
   "detail_count": 36,
-  "opportunity_count": 1,
+  "opportunity_count": 2,
   "opportunities": [
+    {
+      "category": "Internship",
+      "title": "Internship Opportunity at BenchBriefs Journal [Dec 2026; 7 Posts; Hybrid; Unpaid]: Apply by Nov 10!",
+      "deadline": "2026-10-25",
+      "url": "https://www.lawctopus.com/internship-opportunity-at-benchbriefs-journal-dec-2026/",
+      "verification": "Established scholarship source"
+    },
     {
       "category": "Scholarship",
       "title": "Sussex India Scholarship (Masters) : University of Sussex",
