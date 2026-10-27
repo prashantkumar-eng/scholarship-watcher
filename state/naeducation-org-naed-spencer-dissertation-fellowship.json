@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-10-27T15:06:11.620968+00:00",
- "hash": "89f84c40520c7681d1f31441ce18613ca4350e3fce2f67bdf37d1510ba84c921",
+ "checked_at": "2026-10-27T18:50:04.950828+00:00",
+ "hash": "04b00bc22098035f6cb4eee94b999417a199a65548aa6dc8fa59f1e221fb0a79",
  "lines": [
   "About",
   "Mission",
@@ -34,11 +34,13 @@
   "Earliest start date",
   "Closed",
   "Application opens",
+  "Expected August 2027",
   "Application deadline",
   "Duration of award",
   "Varies (generally one year)",
   "Contact details",
   "info@naeducation.org",
+  "Get notified when applications open",
   "The NAEd/Spencer Dissertation Fellowship encourages a new generation of scholars from a wide range of disciplines and professional fields to undertake research relevant to the improvement of education. This fellowship supports candidates whose dissertation projects bring innovative and insightful approaches to the history, theory, analysis, or application of formal and informal education.",
   "As a highly competitive initiative, this fellowship annually identifies and supports 35 of the most exceptional researchers conducting dissertation studies relevant to education.",
   "The award",
