@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-10-28T12:03:19.987460+00:00",
- "hash": "b50232d2f87c155dd94c5ad75d9a2aae827f41315238cc2ccc9383dc445447ee",
+ "checked_at": "2026-10-28T18:58:40.153889+00:00",
+ "hash": "f0c88d953ec257189eabee52a13b6784eed394b6a39e56380ab5bfd0859bb809",
  "lines": [
   "Skip to main content",
   "Disable Motion",
@@ -37,6 +37,8 @@
   "Fleet optimization tools",
   "How a diesel engine works",
   "Integrated power",
+  "S29 mining engine",
+  "Explore the S29",
   "Generators and Power Systems",
   "Integrated power systems",
   "Alternators",
