@@ -411,5 +411,12 @@
   "subject": "1 deeply verified current opportunities",
   "text": "OpportunityType\tTitle\tDeadline\tValidLink\tVerification\nInternship\tInternships and Small Projects Archives\t2026-10-30\thttps://www.lawctopus.com/category/opportunities-events/internships-small-projects/\tEstablished scholarship source",
   "html": "<h2>Verified Current Opportunities</h2><p>Each page was opened successfully and its future deadline was confirmed.</p><table border='1' cellpadding='7' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px'><tr><th>Type</th><th>Title</th><th>Deadline</th><th>Valid link</th><th>Verification</th></tr><tr><td>Internship</td><td>Internships and Small Projects Archives</td><td>2026-10-30</td><td><a href='https://www.lawctopus.com/category/opportunities-events/internships-small-projects/'>Open</a></td><td>Established scholarship source</td></tr></table>"
+ },
+ {
+  "found_at": "2026-10-30T19:55:21.706931+00:00",
+  "fingerprint": "526dca83644a860f5097f2d411b176f878808e84e6bb759bfe89c5d7d0cad655",
+  "subject": "🆕 Central Coalfields Scholarship Notice: Central Coalfields Scholarship Notice",
+  "text": "ScholarshipTitle\tDeadline\tApplyLink\nCentral Coalfields Scholarship Notice\tNot specified\thttps://www.centralcoalfields.in/hindi/ind/dp_val.php?file=MTI2NDEwNDYyNS5wZGY=&token=e93bd18270db8dfbe620f5fa194ecea49e910b959f093fcbfd6bfc47351d3832&yer=MjAyNi0yMDI3",
+  "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>Central Coalfields Scholarship Notice</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://www.centralcoalfields.in/hindi/ind/dp_val.php?file=MTI2NDEwNDYyNS5wZGY=&amp;token=e93bd18270db8dfbe620f5fa194ecea49e910b959f093fcbfd6bfc47351d3832&amp;yer=MjAyNi0yMDI3\">Apply / view details</a></td></tr></table>"
  }
 ]
