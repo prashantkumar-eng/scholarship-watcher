@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-31T17:56:13.967908+00:00",
+ "checked_at": "2026-10-31T21:01:50.093250+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -70,13 +70,13 @@
   "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Post Matric (Welfare Based Scheme)": {
    "ministry": "Ministry of Labour & Employment",
    "open_from": "01-06-2026",
-   "app_status": "OPEN",
+   "app_status": "CLOSED",
    "app_date": "31-10-2026"
   },
   "Financial Assistance For Education To The Wards Of Beedi/Cine/Iomc/Lsdm- Pre Matric (Welfare Based Scheme)": {
    "ministry": "Ministry of Labour & Employment",
    "open_from": "01-06-2026",
-   "app_status": "OPEN",
+   "app_status": "CLOSED",
    "app_date": "31-10-2026"
   },
   "PM YASASVI Central Sector Scheme Of Top Class Education In Schools For OBC, EBC And DNT Students (Merit Based Scheme)": {
@@ -142,7 +142,7 @@
   "Pre Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
    "ministry": "Department of Empowerment of Persons with Disabilities",
    "open_from": "25-07-2026",
-   "app_status": "OPEN",
+   "app_status": "CLOSED",
    "app_date": "31-10-2026"
   },
   "Post Matric Scholarship For Students With Disabilities (Welfare Based Scheme)": {
