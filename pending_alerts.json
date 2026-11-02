@@ -474,5 +474,12 @@
   "subject": "📅 Odisha Scholarship Details: Avail the scholarship only once in a year",
   "text": "ScholarshipTitle\tDeadline\tApplyLink\nAvail the scholarship only once in a year\tNot specified\thttps://scholarship.odisha.gov.in/scholarship-details\nAvail the scholarship only once in a year\tNot specified\thttps://scholarship.odisha.gov.in/scholarship-details",
   "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>Avail the scholarship only once in a year</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://scholarship.odisha.gov.in/scholarship-details\">Apply / view details</a></td></tr><tr><td>Avail the scholarship only once in a year</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://scholarship.odisha.gov.in/scholarship-details\">Apply / view details</a></td></tr></table>"
+ },
+ {
+  "found_at": "2026-11-02T22:29:29.355977+00:00",
+  "fingerprint": "8022f34cf75d004ef0e619ede269e07172bb0fc5977309f16c7ae68000e9fe8e",
+  "subject": "1 deeply verified current opportunities",
+  "text": "OpportunityType\tTitle\tDeadline\tValidLink\tVerification\nScholarship\tIndia Scholarships 2026-27 | Apply for India Scholarships Now — Swami Dayanand Education Foundation\t2026-11-30\thttps://www.swamidayanand.org/india-scholarships-2026-27\tOfficial provider",
+  "html": "<h2>Verified Current Opportunities</h2><p>Each page was opened successfully and its future deadline was confirmed.</p><table border='1' cellpadding='7' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px'><tr><th>Type</th><th>Title</th><th>Deadline</th><th>Valid link</th><th>Verification</th></tr><tr><td>Scholarship</td><td>India Scholarships 2026-27 | Apply for India Scholarships Now — Swami Dayanand Education Foundation</td><td>2026-11-30</td><td><a href='https://www.swamidayanand.org/india-scholarships-2026-27'>Open</a></td><td>Official provider</td></tr></table>"
  }
 ]
