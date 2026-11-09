@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-09T10:51:40.855872+00:00",
- "hash": "468f521bdfdddc257a40a615dc42cf2ed3c74928d931ea61b6d467e0f9c98afa",
+ "checked_at": "2026-11-09T21:53:46.143588+00:00",
+ "hash": "989b16bc3af1d5b26502a4aca803434b63c5cb169f78371c40f7d3c29a61363a",
  "lines": [
   "Gå til sidens indhold",
   "Reducer sanseindtryk",
@@ -42,6 +42,14 @@
   "Vi driver netværk",
   "Vores historie",
   "Bestyrelsen",
+  "Prefer English?",
+  "Your device language is set to English.",
+  "Switch to English",
+  "Bliv på dansk",
+  "Foretrækker du dansk?",
+  "Din enheds sprog er indstillet til dansk.",
+  "Skift til dansk",
+  "Stay in English",
   "Bevica Scholarship Programme",
   "På denne side kan du læse om de aktiviteter, der følger med deltagelsen i Bevica Scholarship Programme, og blive klogere på de vindende projekter.",
   "Bevica Scholarship Programme er en mulighed for engagerede og talentfulde studerende og undervisere fra alle fagområder for at bidrage til en mere ligeværdig og inkluderende verden.",
