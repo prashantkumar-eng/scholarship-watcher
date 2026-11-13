@@ -572,5 +572,26 @@
   "subject": "1 deeply verified current opportunities",
   "text": "OpportunityType\tTitle\tDeadline\tValidLink\tVerification\nScholarship\tIndia Scholarships 2026-27 | Apply for India Scholarships Now — Swami Dayanand Education Foundation\t2026-11-30\thttps://www.swamidayanand.org/scholarship-program-1\tOfficial provider",
   "html": "<h2>Verified Current Opportunities</h2><p>Each page was opened successfully and its future deadline was confirmed.</p><table border='1' cellpadding='7' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px'><tr><th>Type</th><th>Title</th><th>Deadline</th><th>Valid link</th><th>Verification</th></tr><tr><td>Scholarship</td><td>India Scholarships 2026-27 | Apply for India Scholarships Now — Swami Dayanand Education Foundation</td><td>2026-11-30</td><td><a href='https://www.swamidayanand.org/scholarship-program-1'>Open</a></td><td>Official provider</td></tr></table>"
+ },
+ {
+  "found_at": "2026-11-13T13:51:59.823548+00:00",
+  "fingerprint": "8d9b0b7c98c20bd7b3ea70b86bf01e11f74f4f0a9d714ba45958985284398294",
+  "subject": "⚙️ scholarships.gov.in — Pre_Matric_Scholarship_guidelinesSC.pdf: National Scholarship Portal or any other portal as specified",
+  "text": "ScholarshipTitle\tDeadline\tApplyLink\nNational Scholarship Portal or any other portal as specified by the Department of Social\tNot specified\thttps://scholarships.gov.in/public/schemeGuidelines/Goa/Pre_Matric_Scholarship_guidelinesSC.pdf",
+  "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>National Scholarship Portal or any other portal as specified by the Department of Social</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://scholarships.gov.in/public/schemeGuidelines/Goa/Pre_Matric_Scholarship_guidelinesSC.pdf\">Apply / view details</a></td></tr></table>"
+ },
+ {
+  "found_at": "2026-11-13T13:52:00.376534+00:00",
+  "fingerprint": "48ecc436c66c29abe807d8d890b895c1569c2b064f8c3bd0f37a5aac1df9f299",
+  "subject": "🟢 www.lawctopus.com — wintern internship opportunity national green: Internships and Small Projects",
+  "text": "ScholarshipTitle\tDeadline\tApplyLink\nInternships and Small Projects\tNot specified\thttps://www.lawctopus.com/internship-opportunity-at-law-cpm-defence-colony-delhi/\nInternship Opportunity at Law CPM, Defence Colony, Delhi [Research; In-Office; Performance-Based Stipend; January 2027]: Apply Now!\tNot specified\thttps://www.lawctopus.com/structured-mediation-internship-opportunity-at-outofcourt-in-virtual/",
+  "html": "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px'><tr style='background:#f0f0f0'><th align='left'>ScholarshipTitle</th><th align='left'>Deadline</th><th align='left'>ApplyLink</th></tr><tr><td>Internships and Small Projects</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://www.lawctopus.com/internship-opportunity-at-law-cpm-defence-colony-delhi/\">Apply / view details</a></td></tr><tr><td>Internship Opportunity at Law CPM, Defence Colony, Delhi [Research; In-Office; Performance-Based Stipend; January 2027]: Apply Now!</td><td style='white-space:nowrap'>Not specified</td><td><a href=\"https://www.lawctopus.com/structured-mediation-internship-opportunity-at-outofcourt-in-virtual/\">Apply / view details</a></td></tr></table>"
+ },
+ {
+  "found_at": "2026-11-13T13:56:46.005991+00:00",
+  "fingerprint": "e776ee5ae637b0c73fb1d9cce74f5a2314491b16b9d5eef305403c96c88e921d",
+  "subject": "🎓 NSP Scheme Update",
+  "text": "🎓 NSP Scheme Update\nhttps://scholarships.gov.in/All-Scholarships\n\n📅 Deadline changed: PM-USP – Central Sector Scheme Of Scholarship For College And University Students (CSSS) (Merit Based Scheme) [Department of Higher Education] — was ?, now 30-11-2026",
+  "html": ""
  }
 ]
