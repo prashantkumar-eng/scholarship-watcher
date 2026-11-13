@@ -1,10 +1,17 @@
 {
-  "scanned_at": "2026-11-12T21:04:40.445255+00:00",
+  "scanned_at": "2026-11-13T20:39:57.895956+00:00",
   "seed_count": 42,
   "reachable_seed_count": 26,
   "detail_count": 36,
-  "opportunity_count": 2,
+  "opportunity_count": 3,
   "opportunities": [
+    {
+      "category": "Internship",
+      "title": "Internships and Small Projects Archives",
+      "deadline": "2026-11-13",
+      "url": "https://www.lawctopus.com/category/opportunities-events/internships-small-projects/",
+      "verification": "Established scholarship source"
+    },
     {
       "category": "Scholarship",
       "title": "India Scholarships 2026-27 | Apply for India Scholarships Now — Swami Dayanand Education Foundation",
