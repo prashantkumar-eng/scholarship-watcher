@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-16T00:46:32.994619+00:00",
+ "checked_at": "2026-11-16T10:39:47.019267+00:00",
  "schemes": {
   "Prime Minister'S Scholarship Scheme For Wards Of States/UTs Police Personnel Martyred During Terror/Naxal Attacks (Merit Based Scheme)": {
    "ministry": "Ministry of Home Affairs",
@@ -165,7 +165,7 @@
   },
   "PM-USP – Central Sector Scheme Of Scholarship For College And University Students (CSSS) (Merit Based Scheme)": {
    "ministry": "Department of Higher Education",
-   "open_from": "",
+   "open_from": "02-06-2026",
    "app_status": "OPEN",
    "app_date": "30-11-2026"
   },
