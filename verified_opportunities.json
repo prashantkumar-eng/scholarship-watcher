@@ -1,15 +1,22 @@
 {
-  "scanned_at": "2026-11-15T19:31:10.470076+00:00",
+  "scanned_at": "2026-11-16T23:03:58.834387+00:00",
   "seed_count": 42,
   "reachable_seed_count": 26,
-  "detail_count": 36,
-  "opportunity_count": 2,
+  "detail_count": 34,
+  "opportunity_count": 3,
   "opportunities": [
     {
       "category": "Scholarship",
       "title": "India Scholarships 2026-27 | Apply for India Scholarships Now — Swami Dayanand Education Foundation",
       "deadline": "2026-11-30",
       "url": "https://www.swamidayanand.org/scholarship-program-1",
+      "verification": "Official provider"
+    },
+    {
+      "category": "Scholarship",
+      "title": "NSP : National Scholarship Portal",
+      "deadline": "2026-11-30",
+      "url": "https://scholarships.gov.in/",
       "verification": "Official provider"
     },
     {
