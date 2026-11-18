@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-18T11:07:42.012454+00:00",
- "hash": "ca8670da0f7f1df5128ffd95d7e4fba9f1a97c280fe6c3249bfa082c445bcb99",
+ "checked_at": "2026-11-18T19:59:10.377592+00:00",
+ "hash": "4044fdd04319c3a002cfd928ff270e417283acf9750d650d16c17084f1477d5f",
  "lines": [
   "NSP : National Scholarship Portal",
   "Government of India",
@@ -61,8 +61,6 @@
   "Schemes on NSP",
   "Scholarship",
   "Eligibility",
-  "Application",
-  "Status",
   "Track Your Payment",
   "Aadhaar Seva Kendra",
   "Check Aadhaar Seeding Status",
